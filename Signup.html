@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.3.3.7.min.css">
+
+
+    <script type="text/javascript" src="scripts/core/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="scripts/core/loadingoverlay.min.js"></script>
+    <script type="text/javascript" src="scripts/core/jquery.cookie.js"></script>
+    <script type="text/javascript" src="scripts/core/bootstrap.3.3.7.min.js"></script>
+    <script type="text/javascript" src="scripts/core/jquery-captcha-lgh.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
+    <script type="text/javascript" src="scripts/signup.js"></script>
+    <style>
+        canvas {
+            border: 1px solid rgb(24, 91, 168);
+            margin: 10px auto;
+            padding: 5px;
+        }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body style="overflow: hidden;">
+    <div class="signup-page">
+        <div class="form-title">
+            <div class="row">
+            <div style="width: 100%; text-align: center; padding-bottom: 10px; font-family:roboto,sans-serif;">
+                <h3 style="color: #1c99ed; font-weight: bold;">Signup</h3>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div class="form">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-12 col-md-12" style="text-align: left;">
+                        <div class="form-group">
+                            <span class="control-label" for="txtName">Applicant Name <span
+                                    style="color:red">*</span></span>
+                            <input type="text" class="form-control" id="txtName" />
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label" for="txtMobile">Mobile<span style="color:red">*</span></span>
+                            <input type="text" name="number" class="form-control" id="txtMobile" max="10" maxlength="10"/>
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label" for="txtEmailID">Email<span style="color:red">*</span></span>
+                            <input type="text" class="form-control" id="txtEmailID" placeholder="(Your Login ID)" />
+                        </div>
+                       <div class="form-group">
+                            <span class="control-label" for="txtPassword">Password<span style="color:red">*</span></span>
+                            <input type="password" class="form-control" id="txtPassword" max="10" title="Length must be 6 char and above" placeholder="(Length must be 6 char and above)" />
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label" for="txtConfirmPassword">Confirm Password<span style="color:red">*</span></span>
+                            <input type="password" title="Length must be 6 char and above" class="form-control" id="txtConfirmPassword"  max="10"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12" style="margin-bottom: 5px; margin-top: 5px;">
+                        <canvas id="canvas" width="200" height="100"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <input name="code" placeholder="Enter Captcha code" class="form-control" min="5" max="5" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12" style="margin-top: 10px;">
+                        <div class="col-sm-6 col-md-6">
+                            <button  style="background-color: #1c99ed; border-radius: 5px;"
+                                id="btnSignUp">Create</button>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <button style="background-color: #1c99ed; border-radius: 5px;" id="btnBack">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="footer" style="width: 100%;text-align: center">
+    <span style="font-size: 0.8em; color: #ffffff;text-align: center"> macsit.com pvt ltd © All rights reserved</span>
+</div>
+
+</html>

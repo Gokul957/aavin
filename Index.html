@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.3.3.7.min.css">
+
+    <script type="text/javascript" src="scripts/core/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="scripts/core/loadingoverlay.min.js"></script>
+    <script type="text/javascript" src="scripts/core/jquery.cookie.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/loginstyle.css" />
+
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-database.js"></script>
+    <script type="text/javascript" src="scripts/core/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/core/jquery-captcha-lgh.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+    
+    <script>
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+
+    </script>
+    <style>
+        .logoBorder {
+            border-radius: 50%;
+            border-color: white;
+            border-width: 1px;
+            border-style: solid;
+            padding: 2px;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+
+<body style="overflow: hidden;">
+    <div style="width: 100%; text-align: center;  margin-top: 35px; font-family:roboto,sans-serif;">
+        <img src="images/logo.png" class="" style="margin-right: 10px" width="90px" height="40px" />
+        <h3 style="font-weight: bold; color: hsl(204, 85%, 52%)">TPR31 THE TIRUPUR DIST.CO-OP. MILK PRODUCER’S UNION LIMITED</h3>
+        <h3 style="font-weight: bold;color: #1c99ed">RECRUTEMENT-2021</h3>
+    </div>
+    <div class="login-page">
+        <div class="form-login">
+            <div class="col-sm-12 col-lg-12 col-md-12" style="text-align: left;"></div>
+                <div class="row" style="text-align: left;">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="form-group">
+                            <span class="control-label" for="txtEmailID">User ID(Email)<span style="color:red">*</span></span>
+                            <input type="text" class="form-control" id="txtEmailID" placeholder="" />
+                        </div>
+                        <div class="form-group">
+                            <span class="control-label" for="txtPassword">Password<span
+                                    style="color:red">*</span></span>
+                            <input type="password" class="form-control" id="txtPassword" placeholder="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12">
+                        <button style=" width: 100px; background-color: #1c99ed;padding: 10px; color: white;border-radius: 5px;" id="btnLogin">Login</button>
+                        <p style="margin-top: 15px;" class="message">Already registered?
+                            <a href="/aavin/Signup.html"><span class="message">Sign In</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<div class="footer" style="width: 100%;text-align: center;margin-top: 100px;">
+    <span style="font-size: 0.8em; color: #1c99ed;text-align: center"> macsit.com pvt ltd © All rights reserved</span>
+</div>
+
+
+</html>

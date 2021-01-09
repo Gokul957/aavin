@@ -1,0 +1,300 @@
+<div class="content">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <h4 id="title" class="form-entry-title">Application Form</h4>
+        </div>
+    </div>
+    <hr class="form-rule" />
+    <div id="ApplicationForm">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Name">Name of the Candidate:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="txtNameoftheCandidate" placeholder="Enter Name"
+                        name="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Gender:</label>
+                <div class="col-sm-2">
+                    <select id="ddlGender" class="form-control" style="width: 100%;height: 34px"
+                        onmousedown="this.value='';">
+                        <option value="0">-Select-</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Date of Birth:</label>
+                <div class="col-sm-2">
+                    <select id="ddlDate" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select Date-</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <select id="ddlmonth" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select Month-</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <select id="ddlYear" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select Year-</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Age">Age as on 1 July of the year 2020:</label>
+                <div class="col-sm-2">
+                    <input type="text" name="number" maxlength="2" class="form-control" id="txtAge" placeholder="Enter Age" name="Age">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="FatherName">Father’s Name:</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="txtFatherName" placeholder="Enter Father's Name"
+                        name="FatherName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="MotherName">Mother’s Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtMotherName" placeholder="Enter Mother's Name"
+                        name="MotherName">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="MaritalStatus">Marital Status:</label>
+                <div class="col-sm-10">
+                    <select id="ddlMaritalStatus" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select-</option>
+                        <option value="1">Married</option>
+                        <option value="1">UnMarried</option>
+                    </select>
+                    <!-- <div class="checkbox">
+                        <label><input type="checkbox" id="chkMarried" name="Married"> Married</label>
+                        <label><input type="checkbox" id="chkUnMarried" name="UnMarried"> UnMarried</label>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="SpouseName">Spouse Name (Husband / Wife):</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtSpouseName" placeholder="Enter Spouse Name"
+                        name="SpouseName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="FemaleApplicant">If applicant is Female:</label>
+                <div class="col-sm-10">
+                    <select id="ddlFemaleApplicant" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select-</option>
+                        <option value="1">Widow</option>
+                        <option value="2">Destitute Widow</option>
+                        <option value="3">Others</option>
+                    </select>
+                    <!--  <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Widow
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Destitute Widow
+                        </label>
+                    </div>
+                    <div class="form-check-inline disabled">
+                        <label class="form-check-label">
+                          <input type="radio" class="form-check-input" name="optradio">Others
+                        </label>
+                    </div> -->
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="BirthPlace">Place of Birth:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPlaceofBirth" placeholder="Enter Place of Birth"
+                        name="PlaceofBirth">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="DistrictandState">Native District and State:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtNativeDistrictandState"
+                        placeholder="Enter Native State and District" name="DistrictandState">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="OtherState">If other than TN, Specify the Name of the
+                    State:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtOtherState" placeholder="Enter Name of the State"
+                        name="OtherState">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="OtherState">Mother Tongue:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtMotherTongue" placeholder="Enter Mother Tongue"
+                        name="MotherTongue">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Other languages Known:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtOtherlanguagesKnown"
+                        placeholder="Enter Other languages Known" name="OtherlanguagesKnown">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Nationality:</label>
+                <div class="col-sm-10">
+                    <select id="ddlFemaleApplicant" class="form-control" style="width: 100%;height: 34px">
+                        <option value="0">-Select-</option>
+                        <option value="1">Indian</option>
+                        <option value="2">Others</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Religion (Please specify):</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtReligion" placeholder="Enter Religion"
+                        name="Religion">
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Address For Communication</h3>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Door No:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtDoorNo" placeholder="Enter Door No" name="DoorNo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Street Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtStreetName" placeholder="Enter Door No"
+                        name="DoorNo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">City/Village:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtCityorVillage:" placeholder="Enter City/Village"
+                        name="CityorVillage">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">District:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtDistrict:" placeholder="Enter District"
+                        name="District">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">State:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtState" placeholder="Enter State" name="State">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Pin code:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPincode" placeholder="Enter Pin code" name="Pincode">
+                </div>
+            </div>
+            <div class="form-group">
+                <h3>Permanent Address</h3>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Door No:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPDoorNo" placeholder="Enter Door No" name="DoorNo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Street Name:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPStreetName" placeholder="Enter Door No"
+                        name="DoorNo">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">City/Village:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPCityorVillage:" placeholder="Enter City/Village"
+                        name="CityorVillage">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">District:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPDistrict:" placeholder="Enter District"
+                        name="District">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">State:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPState" placeholder="Enter State" name="State">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="">Pin code:</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="txtPPincode" placeholder="Enter Pin code"
+                        name="Pincode">
+                </div>
+            </div>
+        </form>
+        <hr class="form-rule" />
+        <div class="row text-center" style="margin-top:20px;">
+            <div class="col-lg-12 col-sm-12">
+                <button type="button" class="btn btn-sm" id="btnSave" onclick="javascript: return fnUpdate();"><span
+                        class='glyphicon glyphicon-floppy-disk'></span> Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+
+        fnloaddate();
+        fnloadmonth();
+        fnloadyear();
+    });
+
+    function fnloaddate() {
+        for (var i = 1; i <= 31; i++) {
+            $("#ddlDate").append("<option value='" + i + "'>" + i + "</option>");
+        }
+    }
+
+    function fnloadmonth() {
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        var month = (new Date()).getMonth();
+        for (; month < monthNames.length; month++) {
+            $('#ddlmonth').append('<option>' + monthNames[month] + '</option>');
+        }
+    }
+
+    function fnloadyear() {
+
+        options = "";
+
+        for (var Y = 2010; Y >= 1960; Y--) {
+            options += "<option>" + Y + "</option>";
+        }
+        $("#ddlYear").append(options);
+    }
+</script>
